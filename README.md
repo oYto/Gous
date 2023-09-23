@@ -1,2 +1,2 @@
 # Gous
-Gous
+Gous GoLand
