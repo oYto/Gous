@@ -1,0 +1,17 @@
+[2023-08-31 16:16:03] INFO[db.go:25] mdb addr: root:123456@(0.0.0.0:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-31 16:21:13] ERROR[user.go:34] Gous: 用户已经注册，user_name=123
+[2023-08-31 16:21:26] INFO[db.go:25] mdb addr: root:123456@(0.0.0.0:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-31 16:22:03] INFO[db.go:25] mdb addr: root:123456@(0.0.0.0:8086)/camps_user?charset=utf8&parseTime=True&loc=Local
+[2023-08-31 16:22:03] INFO[user.go:48] Gous：user ====== &{CreateModel:{Creator:123 CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:123 modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:123 Gender:male Age:21 PassWord:123 NickName:123}
+[2023-08-31 16:22:03] INFO[user.go:30] insert success
+[2023-08-31 17:19:36] INFO[api.go:58] loggin start, user:ft, password:123456
+[2023-08-31 17:19:36] INFO[redis.go:20] redisConfig ====== {Host:0.0.0.0 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-31 17:19:36] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-31 17:19:36] INFO[db.go:25] mdb addr: root:123456@(0.0.0.0:8086)/camps_user?charset=utf8&parseTime=True&loc=Local
+[2023-08-31 17:19:37] ERROR[user.go:66] Login | 用户尚未注册
+[2023-08-31 17:19:46] INFO[api.go:58] loggin start, user:123, password:123
+[2023-08-31 17:19:46] INFO[user.go:106] user === &{CreateModel:{Creator:123 CreateTime:2023-08-31 16:22:03 +0800 CST} ModifyModel:{Modifier:123 modifyTime:{wall:0 ext:0 loc:<nil>}} ID:1 Name:123 Gender:male Age:21 PassWord:123 NickName:123}
+[2023-08-31 17:19:46] INFO[user.go:113] setUserInfo successfully, with key userinfo_123
+[2023-08-31 17:19:46] INFO[user.go:86] Login successfully, 123@123 with redis_session session_6d7b98ea7584bc045e108f9650e88386
+[2023-08-31 17:19:47] INFO[user.go:184] 97ec7895ba68b99c424a710c37245352|GetUserInfo access from,user_name=123|session=6d7b98ea7584bc045e108f9650e88386
+[2023-08-31 17:19:47] INFO[user.go:199] 97ec7895ba68b99c424a710c37245352|Succ to GetUserInfo|user_name=123|session=6d7b98ea7584bc045e108f9650e88386

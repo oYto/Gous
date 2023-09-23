@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <link rel="shortcut icon" href="images/favico.ico">
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <script src="http://www.gongjuji.net/Content/files/jquery.md5.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div class="imgcontainer">
+        <img src="images/camps.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+        <label for="uname"><b>用户名</b></label>
+        <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>密码</b></label>
+        <input id="passwd" type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" onclick="login()">登入</button>
+
+    </div>
+
+</body>
+</html>
+
+
+<script>
+    function login() {
+        console.log("2222")
+        var username = document.getElementById("username")
+        var passwd = document.getElementById("passwd")
+
+        //如果用户名输入框的值为空，让光标聚焦到该输入框，并且停止代码执行。这可以防止用户没有输入用户名就提交表单，下同。
+        if (username.value === "") {
+            username.focus();
+            return;
+        }
+
+        if (passwd.value === "") {
+            passwd.focus();
+            return;
+        }
+        //jQuery库中的ajax方法，，
+        $.ajax({
+            type: "POST",   //向指定url发送POST请求
+            dataType: "json",//数据类型为json格式，
+            url: urlPrefix +'/user/login',
+            contentType: "application/json",    //同时也将请求头中的Content-Type设为了application/json。
+            data:JSON.stringify({
+                "user_name": username.value,
+                "pass_word": passwd.value
+            }),
+            //Ajax 请求成功后的回调函数，根据服务器返回的结果来决定执行不同的操作。
+            success: function (result) {
+                console.log("data is :" + result)
+                if (result.code == 0) {
+                    //alert("登陆成功");
+                    //将用户重定向到另一个网页
+                    window.location.href = urlPrefix + "/static/index.html?name=" + username.value;
+                    window.event.returnValue = false
+                }else {
+                    alert("账号或密码错误")
+                }
+            }
+        });
+
+
+
+        // var xhr = new XMLHttpRequest();
+        // xhr.open('post', urlPrefix + '/user/login')
+        // xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+        // xhr.send('user_name=' + username.value + "&pass_word=" + $.md5(passwd.value))
+        // xhr.onreadystatechange = function () {
+        //     if (xhr.readyState === 4 && xhr.status === 200) {
+        //         console.log(xhr.responseText)
+        //         var json = eval("(" + xhr.responseText + ")");
+        //         console.log(json.code)
+        //         console.log(json.msg)
+        //         console.log(json.data)
+        //         if (json.code === 0) {
+        //             window.location.href = urlPrefix + "/static/index.html?name=" + username.value
+        //             window.event.returnValue = false
+        //         } else {
+        //             alert("账号或密码错误")
+        //             //window.location.href = urlPrefix + "/static/login.html"
+        //         }
+        //     }
+        // }
+    }
+</script>
+

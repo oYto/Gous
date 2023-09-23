@@ -1,0 +1,363 @@
+[2023-08-12 11:51:18] ERROR[router.go:45] start server err:listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+[2023-08-12 11:51:18] INFO[main.go:16] 日志开启。。。
+[2023-08-12 11:54:26] ERROR[router.go:45] start server err:listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+[2023-08-12 11:54:26] INFO[main.go:16] 日志开启。。。
+[2023-08-12 11:55:40] ERROR[router.go:45] start server err:listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+[2023-08-12 11:55:40] INFO[main.go:16] 日志开启。。。
+[2023-08-12 12:23:04] ERROR[user.go:18] Gous：register param invalid
+[2023-08-12 12:24:03] ERROR[user.go:18] Gous：register param invalid
+[2023-08-12 12:24:11] ERROR[user.go:18] Gous：register param invalid
+[2023-08-12 12:25:56] ERROR[user.go:18] Gous：register param invalid
+[2023-08-12 12:27:10] ERROR[user.go:18] Gous：register param invalid
+[2023-08-12 12:28:56] ERROR[user.go:18] Gous：register param invalid
+[2023-08-12 12:29:18] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:192.168.169.128)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 12:31:49] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 12:31:49] ERROR[user.go:18] GetUserByName failed: Error 1146 (42S02): Table 'Gous.users' doesn't exist
+[2023-08-12 12:31:49] ERROR[user.go:24] Gous: Register | error: GetUserByName failed: Error 1146 (42S02): Table 'Gous.users' doesn't exist
+[2023-08-12 12:34:48] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 12:34:49] INFO[user.go:44] Gous：user ====== &{CreateModel:{Creator: CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier: modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name: Gender:male Age:18 PassWord: NickName:}
+[2023-08-12 12:34:49] INFO[user.go:30] insert success
+[2023-08-12 12:35:31] ERROR[user.go:30] Gous: 用户已经注册，user_name=
+[2023-08-12 12:35:40] ERROR[user.go:30] Gous: 用户已经注册，user_name=
+[2023-08-12 12:35:44] ERROR[user.go:30] Gous: 用户已经注册，user_name=
+[2023-08-12 12:35:50] ERROR[user.go:30] Gous: 用户已经注册，user_name=
+[2023-08-12 12:35:53] ERROR[user.go:30] Gous: 用户已经注册，user_name=
+[2023-08-12 12:35:56] ERROR[user.go:30] Gous: 用户已经注册，user_name=
+[2023-08-12 12:36:14] ERROR[user.go:30] Gous: 用户已经注册，user_name=
+[2023-08-12 12:37:37] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 12:37:37] INFO[user.go:44] Gous：user ====== &{CreateModel:{Creator:fsd CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:fsd modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:fsd Gender:male Age:43 PassWord:fsda NickName:}
+[2023-08-12 12:37:37] INFO[user.go:30] insert success
+[2023-08-12 12:37:58] ERROR[user.go:30] Gous: 用户已经注册，user_name=fsd
+[2023-08-12 12:38:01] INFO[user.go:44] Gous：user ====== &{CreateModel:{Creator:fsdd CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:fsdd modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:fsdd Gender:male Age:43 PassWord:fsd NickName:}
+[2023-08-12 12:38:01] INFO[user.go:30] insert success
+[2023-08-12 12:38:41] INFO[user.go:44] Gous：user ====== &{CreateModel:{Creator:fsddfds CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:fsddfds modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:fsddfds Gender:male Age:43 PassWord:fsd NickName:}
+[2023-08-12 12:38:41] INFO[user.go:30] insert success
+[2023-08-12 12:39:34] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 12:39:34] INFO[user.go:44] Gous：user ====== &{CreateModel:{Creator:fsddfdsd CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:fsddfdsd modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:fsddfdsd Gender:male Age:43 PassWord:dd NickName:asd}
+[2023-08-12 12:39:34] INFO[user.go:30] insert success
+[2023-08-12 12:40:36] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 12:40:36] ERROR[user.go:18] GetUserByName failed: Error 1146 (42S02): Table 'Gous.users' doesn't exist
+[2023-08-12 12:40:36] ERROR[user.go:24] Gous: Register | error: GetUserByName failed: Error 1146 (42S02): Table 'Gous.users' doesn't exist
+[2023-08-12 12:41:21] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 12:41:21] INFO[user.go:44] Gous：user ====== &{CreateModel:{Creator:fsddfdsdfsd CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:fsddfdsdfsd modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:fsddfdsdfsd Gender:male Age:43 PassWord:fsdfsd NickName:asd}
+[2023-08-12 12:41:21] INFO[user.go:30] insert success
+[2023-08-12 12:42:09] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 12:42:09] INFO[user.go:46] Gous：user ====== &{CreateModel:{Creator:fsddfdsdfsdd CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:fsddfdsdfsdd modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:fsddfdsdfsdd Gender:male Age:43 PassWord:d NickName:asd}
+[2023-08-12 12:42:09] INFO[user.go:30] insert success
+[2023-08-12 12:42:36] INFO[user.go:46] Gous：user ====== &{CreateModel:{Creator:da CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:da modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:da Gender:male Age:43 PassWord:ddsads NickName:fsda}
+[2023-08-12 12:42:36] INFO[user.go:30] insert success
+[2023-08-12 12:42:47] ERROR[user.go:32] Gous: 用户已经注册，user_name=fsdd
+[2023-08-12 12:47:34] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 12:47:34] INFO[user.go:46] Gous：user ====== &{CreateModel:{Creator:fsdds CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:fsdds modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:fsdds Gender:male Age:43 PassWord:fsd NickName:fsda}
+[2023-08-12 12:47:34] INFO[user.go:30] insert success
+[2023-08-12 13:16:01] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 13:16:01] INFO[user.go:47] Gous：user ====== &{CreateModel:{Creator:ft CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:ft Gender:male Age:18 PassWord:ft NickName:ft}
+[2023-08-12 13:16:01] INFO[user.go:30] insert success
+[2023-08-12 13:16:04] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 13:16:04] INFO[user.go:90] user === &{CreateModel:{Creator:ft CreateTime:2023-08-12 13:16:02 +0800 CST} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:11 Name:ft Gender:male Age:18 PassWord:ft NickName:ft}
+[2023-08-12 13:52:04] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 13:52:04] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 13:52:05] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 13:52:05] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 13:52:05] INFO[user.go:106] user === &{CreateModel:{Creator:ft CreateTime:2023-08-12 13:16:02 +0800 CST} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:11 Name:ft Gender:male Age:18 PassWord:ft NickName:ft}
+[2023-08-12 13:52:05] INFO[user.go:113] setUserInfo successfully, with key userinfo_ft
+[2023-08-12 13:52:05] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:18:04] INFO[user.go:122] c93b27d9daee40e83a26ae83396b1dfd|Logout access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:18:04] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 14:18:04] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 14:18:04] INFO[cache.go:68] session is:fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:18:04] INFO[user.go:137] c93b27d9daee40e83a26ae83396b1dfd|Success to delSessionInfo :fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:18:32] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 14:18:32] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 13:16:02 +0800 CST} {ft {0 0 <nil>}} 11 ft male 18 ft ft}
+[2023-08-12 14:18:32] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:18:37] INFO[user.go:122] c4badb26708554db0e1ecf921f1e1ecf|Logout access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:18:37] INFO[cache.go:68] session is:fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:18:37] INFO[user.go:137] c4badb26708554db0e1ecf921f1e1ecf|Success to delSessionInfo :fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:36:55] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 14:36:55] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 14:36:55] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 14:36:55] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 13:16:02 +0800 CST} {ft {0 0 <nil>}} 11 ft male 18 ft ft}
+[2023-08-12 14:36:55] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:37:08] INFO[user.go:122] 54dd5b01ae7f8f82830a1af1960be169|Logout access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:37:08] INFO[cache.go:68] session is:fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:37:08] INFO[user.go:137] 54dd5b01ae7f8f82830a1af1960be169|Success to delSessionInfo :fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:37:14] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 14:37:14] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 13:16:02 +0800 CST} {ft {0 0 <nil>}} 11 ft male 18 ft ft}
+[2023-08-12 14:37:14] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:37:21] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 14:39:41] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 14:39:41] INFO[cache.go:68] session is:
+[2023-08-12 14:39:41] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 14:39:41] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 14:39:41] INFO[cache.go:77] rediskey=============userinfo_ft
+[2023-08-12 14:39:41] INFO[user.go:171] user ====== &{CreateModel:{Creator:ft CreateTime:2023-08-12 13:16:02 +0800 CST} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:11 Name:ft Gender:male Age:18 PassWord:ft NickName:ft}
+[2023-08-12 14:39:42] INFO[user.go:41] delete success
+[2023-08-12 14:41:50] INFO[user.go:48] Gous：user ====== &{CreateModel:{Creator:ft CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:ft Gender:male Age:22 PassWord:ft NickName:ft}
+[2023-08-12 14:41:50] INFO[user.go:30] insert success
+[2023-08-12 14:41:53] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 14:41:53] INFO[user.go:106] user === &{CreateModel:{Creator:ft CreateTime:2023-08-12 14:41:51 +0800 CST} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:12 Name:ft Gender:male Age:22 PassWord:ft NickName:ft}
+[2023-08-12 14:41:53] INFO[user.go:113] setUserInfo successfully, with key userinfo_ft
+[2023-08-12 14:41:53] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:42:02] INFO[user.go:122] 07e7f128eef489ea9d5371ae87338bb8|Logout access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:42:02] INFO[cache.go:68] session is:fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:42:02] INFO[user.go:137] 07e7f128eef489ea9d5371ae87338bb8|Success to delSessionInfo :fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:42:09] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 14:42:09] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 14:41:51 +0800 CST} {ft {0 0 <nil>}} 12 ft male 22 ft ft}
+[2023-08-12 14:42:09] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:42:10] INFO[cache.go:68] session is:
+[2023-08-12 14:42:10] INFO[cache.go:77] rediskey=============userinfo_ft
+[2023-08-12 14:42:10] INFO[user.go:171] user ====== &{CreateModel:{Creator:ft CreateTime:2023-08-12 14:41:51 +0800 CST} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:12 Name:ft Gender:male Age:22 PassWord:ft NickName:ft}
+[2023-08-12 14:42:10] INFO[user.go:41] delete success
+[2023-08-12 14:42:40] INFO[api.go:58] loggin start, user:fsdd, password:fsd
+[2023-08-12 14:42:40] INFO[user.go:106] user === &{CreateModel:{Creator:fsdd CreateTime:2023-08-12 12:38:02 +0800 CST} ModifyModel:{Modifier:fsdd modifyTime:{wall:0 ext:0 loc:<nil>}} ID:4 Name:fsdd Gender:male Age:43 PassWord:fsd NickName:}
+[2023-08-12 14:42:40] INFO[user.go:113] setUserInfo successfully, with key userinfo_fsdd
+[2023-08-12 14:42:40] INFO[user.go:86] Login successfully, fsdd@fsd with redis_session session_5a8f7fef24a42ac234c60ce44bc2bef1
+[2023-08-12 14:45:21] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 14:45:21] INFO[cache.go:68] session is:5a8f7fef24a42ac234c60ce44bc2bef1
+[2023-08-12 14:45:21] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 14:45:21] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 14:45:21] INFO[cache.go:77] rediskey=============userinfo_fsdd
+[2023-08-12 14:45:21] INFO[user.go:171] user ====== &{CreateModel:{Creator:fsdd CreateTime:2023-08-12 12:38:02 +0800 CST} ModifyModel:{Modifier:fsdd modifyTime:{wall:0 ext:0 loc:<nil>}} ID:4 Name:fsdd Gender:male Age:43 PassWord:fsd NickName:}
+[2023-08-12 14:45:21] INFO[user.go:41] delete success
+[2023-08-12 14:47:12] INFO[user.go:48] Gous：user ====== &{CreateModel:{Creator:ft CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:ft Gender:male Age:22 PassWord:ft NickName:ft}
+[2023-08-12 14:47:12] INFO[user.go:30] insert success
+[2023-08-12 14:47:15] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 14:47:15] INFO[user.go:106] user === &{CreateModel:{Creator:ft CreateTime:2023-08-12 14:47:13 +0800 CST} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:13 Name:ft Gender:male Age:22 PassWord:ft NickName:ft}
+[2023-08-12 14:47:15] INFO[user.go:113] setUserInfo successfully, with key userinfo_ft
+[2023-08-12 14:47:15] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:47:16] INFO[cache.go:68] session is:fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:47:16] INFO[cache.go:77] rediskey=============userinfo_ft
+[2023-08-12 14:47:16] INFO[user.go:171] user ====== &{CreateModel:{Creator:ft CreateTime:2023-08-12 14:47:13 +0800 CST} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:13 Name:ft Gender:male Age:22 PassWord:ft NickName:ft}
+[2023-08-12 14:47:16] INFO[user.go:41] delete success
+[2023-08-12 14:52:16] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 14:52:16] ERROR[user.go:66] Login | 用户尚未注册
+[2023-08-12 14:52:17] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 14:52:17] ERROR[user.go:66] Login | 用户尚未注册
+[2023-08-12 14:52:17] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 14:52:17] ERROR[user.go:66] Login | 用户尚未注册
+[2023-08-12 14:52:27] INFO[user.go:48] Gous：user ====== &{CreateModel:{Creator:ft CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:ft Gender:male Age:22 PassWord:ft NickName:ft}
+[2023-08-12 14:52:27] INFO[user.go:30] insert success
+[2023-08-12 14:52:30] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 14:52:30] INFO[user.go:106] user === &{CreateModel:{Creator:ft CreateTime:2023-08-12 14:52:27 +0800 CST} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:14 Name:ft Gender:male Age:22 PassWord:ft NickName:ft}
+[2023-08-12 14:52:30] INFO[user.go:113] setUserInfo successfully, with key userinfo_ft
+[2023-08-12 14:52:30] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:53:46] INFO[cache.go:68] session is:fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 14:53:46] INFO[cache.go:77] rediskey=============userinfo_ft
+[2023-08-12 14:53:46] INFO[user.go:171] user ====== &{CreateModel:{Creator:ft CreateTime:2023-08-12 14:52:27 +0800 CST} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:14 Name:ft Gender:male Age:22 PassWord:ft NickName:ft}
+[2023-08-12 14:53:46] INFO[user.go:41] delete success
+[2023-08-12 15:09:42] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:09:42] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:09:42] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:09:42] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 15:09:42] ERROR[user.go:66] Login | 用户尚未注册
+[2023-08-12 15:09:48] INFO[user.go:48] Gous：user ====== &{CreateModel:{Creator:ft CreateTime:0001-01-01 00:00:00 +0000 UTC} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:0 Name:ft Gender:male Age:22 PassWord:ft NickName:ft}
+[2023-08-12 15:09:48] INFO[user.go:30] insert success
+[2023-08-12 15:09:51] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:09:51] INFO[user.go:106] user === &{CreateModel:{Creator:ft CreateTime:2023-08-12 15:09:49 +0800 CST} ModifyModel:{Modifier:ft modifyTime:{wall:0 ext:0 loc:<nil>}} ID:15 Name:ft Gender:male Age:22 PassWord:ft NickName:ft}
+[2023-08-12 15:09:51] INFO[user.go:113] setUserInfo successfully, with key userinfo_ft
+[2023-08-12 15:09:51] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:12:12] INFO[user.go:122] a4c7f3239e82f9da26634bd9873abf22|Logout access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:12:12] INFO[cache.go:68] session is:fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:12:12] INFO[user.go:137] a4c7f3239e82f9da26634bd9873abf22|Success to delSessionInfo :fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:12:16] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:12:16] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:12:16] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:40] INFO[user.go:183] 3d1280269027180cdb2803d7ac74ba47|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:40] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:14:40] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:14:40] INFO[user.go:201] 3d1280269027180cdb2803d7ac74ba47|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:44] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:14:44] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:14:44] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:44] INFO[user.go:183] 8550a2f27cc05240493c872ed33bfe2a|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:44] INFO[user.go:201] 8550a2f27cc05240493c872ed33bfe2a|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:49] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:14:49] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:14:49] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:49] INFO[user.go:183] 1379f4cf77492af89730dda68b949a71|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:49] INFO[user.go:201] 1379f4cf77492af89730dda68b949a71|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:54] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:14:54] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:14:54] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:54] INFO[user.go:183] 9b2c86f5124a451550299669b84b00a2|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:54] INFO[user.go:201] 9b2c86f5124a451550299669b84b00a2|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:59] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:14:59] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:14:59] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:59] INFO[user.go:183] bc6aa60848c5f9034e7451501d294a11|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:14:59] INFO[user.go:201] bc6aa60848c5f9034e7451501d294a11|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:15:19] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:15:19] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:15:19] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:15:19] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:15:19] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:23:58] INFO[user.go:183] 348a90aa569caf8e3748b24ee0063ba4|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:23:58] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:23:58] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:23:58] INFO[user.go:201] 348a90aa569caf8e3748b24ee0063ba4|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:24:02] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:24:02] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:24:02] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:24:02] INFO[user.go:183] 646baf5aed6e7c10318cf343ae216e56|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:24:02] INFO[user.go:201] 646baf5aed6e7c10318cf343ae216e56|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:25:01] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:25:01] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:25:01] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:25:01] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:25:01] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:25:01] INFO[user.go:183] %!s(<nil>)|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:25:01] INFO[user.go:201] %!s(<nil>)|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:25:05] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:25:05] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:25:05] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:25:06] INFO[user.go:183] %!s(<nil>)|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:25:06] INFO[user.go:201] %!s(<nil>)|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:25:41] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:25:41] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:25:41] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:25:41] INFO[user.go:183] %!s(<nil>)|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:25:41] INFO[user.go:201] %!s(<nil>)|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:25:47] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:25:47] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:25:47] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:25:47] INFO[user.go:183] %!s(<nil>)|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:25:47] INFO[user.go:201] %!s(<nil>)|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:26:05] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:26:05] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:26:05] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:26:05] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:26:05] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:27:03] INFO[user.go:183] 643e92aeddb54e8fba30ed784990415d|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:27:03] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:27:03] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:27:03] INFO[user.go:201] 643e92aeddb54e8fba30ed784990415d|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:27:06] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:27:06] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:27:06] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:27:07] INFO[user.go:183] f4d13ceacd84e8a53c97722747981cba|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:27:07] INFO[user.go:201] f4d13ceacd84e8a53c97722747981cba|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:28:20] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:28:20] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:28:20] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:28:20] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:28:20] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:28:20] INFO[user.go:183] d9ee11a3f11db9f2f0c165b40ede280c|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:28:20] INFO[user.go:201] d9ee11a3f11db9f2f0c165b40ede280c|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:28:24] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:28:24] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:28:24] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:28:24] INFO[user.go:183] 2dd1da5878c0c58a81167246847f0253|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:28:24] INFO[user.go:201] 2dd1da5878c0c58a81167246847f0253|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:29:00] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:29:00] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:29:00] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:29:00] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:29:00] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:29:00] INFO[user.go:183] 58c178f23f3206d8b78f3be1aebfcfa4|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:29:00] INFO[user.go:201] 58c178f23f3206d8b78f3be1aebfcfa4|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:29:24] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:29:24] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:29:24] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:29:24] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:29:24] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:29:24] INFO[user.go:183] 5a63ec2fec8cb68599eabf913e4d9351|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:29:24] INFO[user.go:201] 5a63ec2fec8cb68599eabf913e4d9351|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:29:45] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:29:45] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:29:45] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:29:45] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:29:45] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:29:45] INFO[user.go:183] %!s(<nil>)|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:29:45] INFO[user.go:201] %!s(<nil>)|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:31:51] INFO[user.go:183] bc0f616810c569f87790dadbc950b925|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:31:51] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:31:51] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:31:51] INFO[user.go:201] bc0f616810c569f87790dadbc950b925|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:34:36] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:34:36] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:34:36] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:34:36] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:34:36] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:34:36] INFO[user.go:183] a1b1b1d643a736c73d860233bb4285bd|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:34:36] INFO[user.go:198] a1b1b1d643a736c73d860233bb4285bd|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:35:38] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:35:38] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:35:38] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:35:38] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:35:38] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:35:38] INFO[user.go:183] 02d0e39212451300c752179d1875ae78|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:35:38] INFO[user.go:198] 02d0e39212451300c752179d1875ae78|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:40:00] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:40:00] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:40:00] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:40:00] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:40:00] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:40:00] INFO[user.go:183] ea7cd22b28b932ccf97008836822bb00|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:40:00] INFO[user.go:198] ea7cd22b28b932ccf97008836822bb00|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:40:14] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:40:14] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:40:14] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:40:14] INFO[user.go:183] 475b28818aa8b0b0df7be89a0ffb6bdc|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:40:14] INFO[user.go:198] 475b28818aa8b0b0df7be89a0ffb6bdc|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:40:21] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:40:21] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:40:21] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:40:21] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:40:21] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:45:06] INFO[user.go:183] 160009f487e927d12fd066c0ffc45caa|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:45:06] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:45:06] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:45:06] INFO[user.go:198] 160009f487e927d12fd066c0ffc45caa|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:46:30] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:46:30] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:46:30] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:46:30] INFO[user.go:183] 8353170a2b0204e30983146dde04569a|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:46:30] INFO[user.go:198] 8353170a2b0204e30983146dde04569a|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:46:50] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:46:50] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:46:50] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:46:50] INFO[user.go:183] 9feece26d27049a83df34402931b373e|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:46:50] INFO[user.go:198] 9feece26d27049a83df34402931b373e|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:47:51] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:47:51] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:47:51] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:47:51] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:47:51] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:47:51] INFO[user.go:183] 705559b8e27d4d8a2e727b0ce6150961|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:47:51] INFO[user.go:198] 705559b8e27d4d8a2e727b0ce6150961|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:48:21] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:48:21] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 15:48:21] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 15:48:21] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:48:21] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:48:21] INFO[user.go:183] ec639caa9f1d3014553119b2aff65d75|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:48:21] INFO[user.go:198] ec639caa9f1d3014553119b2aff65d75|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:48:24] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 15:48:24] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 15:48:24] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:48:24] INFO[user.go:183] 0a1935301763236b7a777fc33d3c2de2|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:48:24] INFO[user.go:198] 0a1935301763236b7a777fc33d3c2de2|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 15:48:34] INFO[api.go:58] loggin start, user:fsd, password:fsda
+[2023-08-12 15:48:34] INFO[db.go:25] mdb addr: root:123456@(192.168.169.128:8086)/Gous?charset=utf8&parseTime=True&loc=Local
+[2023-08-12 15:48:34] INFO[user.go:106] user === &{CreateModel:{Creator:fsd CreateTime:2023-08-12 12:37:38 +0800 CST} ModifyModel:{Modifier:fsd modifyTime:{wall:0 ext:0 loc:<nil>}} ID:3 Name:fsd Gender:male Age:43 PassWord:fsda NickName:}
+[2023-08-12 15:48:34] INFO[user.go:113] setUserInfo successfully, with key userinfo_fsd
+[2023-08-12 15:48:34] INFO[user.go:86] Login successfully, fsd@fsda with redis_session session_5d41dcdd76fa93eb217ea881e8201ce3
+[2023-08-12 15:48:34] INFO[user.go:183] 5fed8d526e931add4bf889a62349225a|GetUserInfo access from,user_name=fsd|session=5d41dcdd76fa93eb217ea881e8201ce3
+[2023-08-12 15:48:34] INFO[user.go:198] 5fed8d526e931add4bf889a62349225a|Succ to GetUserInfo|user_name=fsd|session=5d41dcdd76fa93eb217ea881e8201ce3
+[2023-08-12 16:31:34] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 16:31:34] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 16:31:34] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 16:31:34] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 16:31:34] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 16:31:35] INFO[user.go:184] a80738d7bbf7e69cdb06bf429c0e7e4c|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 16:31:35] INFO[user.go:199] a80738d7bbf7e69cdb06bf429c0e7e4c|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 16:32:01] INFO[api.go:58] loggin start, user:ft, password:ft
+[2023-08-12 16:32:01] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 16:32:01] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 16:32:01] INFO[user.go:94] cache_user ===== &{{ft 2023-08-12 15:09:49 +0800 CST} {ft {0 0 <nil>}} 15 ft male 22 ft ft}
+[2023-08-12 16:32:01] INFO[user.go:86] Login successfully, ft@ft with redis_session session_fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 16:35:10] ERROR[router.go:45] start server err:listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+[2023-08-12 16:35:24] INFO[user.go:184] 3a07ed364a394e02ee1564e3dfcd3859|GetUserInfo access from,user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1
+[2023-08-12 16:35:24] INFO[redis.go:20] redisConfig ====== {Host:192.168.169.128 Port:8089 DB:0 PassWord: PoolSile:100}
+[2023-08-12 16:35:24] INFO[redis.go:33] res=======OK,err======<nil>
+[2023-08-12 16:35:24] INFO[user.go:199] 3a07ed364a394e02ee1564e3dfcd3859|Succ to GetUserInfo|user_name=ft|session=fa781bedaa78982b4ca3849972f52ac1

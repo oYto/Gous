@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <link rel="shortcut icon" href="images/favico.ico">
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <script src="http://www.gongjuji.net/Content/files/jquery.md5.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<form method="post">
+    <div class="container">
+        <img src="" id="" alt="你没有头像，可以上传一个" class="center" style="height: 250px;width: 250px">
+        <p>
+            <input type="file" id="ipt-file name="file />
+            <button style="width: 150px" type="button" id="btn_upload" onclick="upload()">上传</button>
+        </p>
+        <p id="info"></p>
+    </div>
+
+    <div class="container">
+        <label for="uname"><b>用户名</b></label>
+        <input id="username" type="text" readonly name="uname" required>
+
+        <label for="nick"><b>昵称</b></label>
+        <input id="nickname" type="text" placeholder="Enter nickname" name="nick" required>
+
+        <div id="login_control">
+            <button type="button" id="btn_edit" onclick="changeNickName()">修改昵称</button>
+            <button type="button" id="btn_logoff" onclick="logoff()">注销</button>
+            <button type="button" id="btn_logout" onclick="logout()">登出</button>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
+
+<script>
+<!--    指向选定文件的输入元素的引用。这个元素可以用于读取文件内容，-->
+    var input = document.querySelector("#ipt-file")
+// 获取的 id为 headurl 对象，可以用于修改该 img 标签的属性，
+    var headurl = document.getElementById('headurl')
+// 获取用户名的元素
+    var username = document.getElementById('username')
+//  从URL参数中获取到的名为name的值。
+    from_username = getQueryVariable('name')
+    console.log("from_username:" + from_username)
+    // console.log("username:" + username)
+    // console.log("################")
+// 将网页框中显示的名字设置为从url参数中获取的 名为`name`的值，即用户名
+    username.value = from_username
+// 用JavaScript创建了一个XMLHttpRequest对象，用于发送HTTP请求和接收响应。
+    var xhr = new XMLHttpRequest();
+// 使用 open 方法发送一个 GET 请求到服务器，请求的 URL 是通过拼接 urlPrefix 和 /user/get_user_info，
+// 同时还传递了一个参数 username，
+// 参数值是 from_username，其中 from_username 是通过调用 getQueryVariable 方法获取的 URL 参数中的 name 参数值。
+    xhr.open('get', urlPrefix + '/user/get_user_info?username=' + from_username);
+// 调用send方法发送请求。
+    xhr.send()
+    xhr.onreadystatechange = function () {
+        //如果 readyState 的值为 4（即请求已完成，且响应已就绪），并且状态码为 200，表示响应已经成功返回
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log(xhr.responseText)
+            // eval() 将响应文本解析为 JSON 对象，
+            var json = eval("(" + xhr.responseText + ")")
+
+            if (json.code !== 0) {
+                console.log(json.msg)
+                alert("请先登录!" + json.msg)
+                window.location.href = "login.html"
+            }
+            //并将该对象的属性分别赋值给 HTML 页面中相应的元素。
+            username.value = json.data.user_name
+            nickname.value = json.data.nick_name
+            previousNickname = json.data.nick_name
+
+            console.log("username.value:" + username.value)
+
+            //检查用户头像是否为空，如果不为空则将用户头像设置为指定的url。
+            // 如果头像为空，则不会设置头像并且不会触发该if语句块内的代码。
+            // 其中，headurl是一个img元素，src属性指定了要显示的图片的url。
+            // 在这里，headurl.src被设置为json.data.headurl，该值是用户头像的url。
+            if (json.data.headurl != "") {
+                console.log("set headurl:" + json.data.headurl)
+                headurl.src = json.data.headurl
+            }
+        }
+    }
+    //用于获取 URL 中查询参数的函数
+    function getQueryVariable(variable) {
+        //通过 window.location.search 获取当前 URL 中的查询参数部分，
+        var query = window.location.search.substring(1);//去除第一个`?`后面是参数部分
+        //使用 split("&") 将查询参数分割成一组键值对，url中的参数就是以&进行分割的
+        var vars = query.split("&");
+        // 通过遍历这些键值对，找到与参数名相等的键，并返回它对应的值。如果没有找到，则返回 false。
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] == variable) {//等于前面的就是参数名，例?name=ft，这里就是通过判断name == variable(需要查询的参数名）
+                return pair[1];
+            }
+        }
+        return (false);
+    }
+
+    function logout() {
+        console.log("send to logout")
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: urlPrefix + '/user/logout',
+            contentType: "application/json",
+            data: JSON.stringify({
+                "user_name": username.value,
+            }),
+            success: function (result) {
+                alert("登出成功");
+                window.location.href = urlPrefix + "/static/login.html";
+            },
+            error:function (result) {
+                alert("登出失败")
+            }
+        });
+    }
+
+    function logoff(){
+        console.log("send to logoff")
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: urlPrefix + '/user/logoff',
+            contentType: "application/json",
+            data: JSON.stringify({
+                "user_name": username.value,
+            }),
+            success: function (result) {
+                if (result.code == 0) {
+                    alert("注销成功");
+                    window.location.href = urlPrefix + "/static/login.html";
+                    window.event.returnValue = false
+                } else {
+                    console.log("result.code1======",result.code)
+                    alert("注销失败")
+                }
+            },
+            error:function (result) {
+                console.log("result.code2======",result.code)
+                alert("注销失败")
+            }
+        });
+    }
+
+    function changeNickName() {
+        //id选择器获取昵称输入框内的内容
+        var newNickname = nickname.value
+        if (newNickname.length < 1) {
+            alert('昵称长度不能为空')
+            return
+        }
+
+        if (newNickname == previousNickname) {
+            alert('昵称没有改变')
+            return
+        }
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: urlPrefix + '/user/update_nick_name',
+            contentType: "application/json",
+            data: JSON.stringify({
+                "user_name": username.value,
+                "new_nick_name": newNickname,
+            }),
+            success: function (result) {
+                if (result.code == 0) {
+                    alert("修改成功");
+                } else {
+                    alert("修改失败")
+                }
+            },
+            error:function (result) {
+                alert("修改失败")
+            }
+        });
+    }
+
+    function upload() {
+        // 判断是否选择了文件，如果没有选择文件则不进行上传操作。
+        if (input.files.length === 0) {
+            console.log("未选择文件");
+            return;
+        }
+        //用FileReader对象读取文件内容并转换为Base64编码的字符串，然后将其作为一个JSON对象的属性
+        // var formData = new FormData();
+        // formData.append('username', username.value);
+        // formData.append('picture', input.files[0]);
+
+        $.ajax({
+            type: "POST",   //向指定url发送POST请求
+            dataType: "json",//数据类型为json格式，
+            url: urlPrefix +'/user/upload_pic',
+            contentType: "application/json",    //同时也将请求头中的Content-Type设为了application/json。
+            data:JSON.stringify({
+                "user_name": username.value,
+                "user_head": input.files[0],
+            }),
+            //Ajax 请求成功后的回调函数，根据服务器返回的结果来决定执行不同的操作。
+            success: function (result) {
+                console.log("data is :" + result.value)
+                if (result.code == 0) {
+                    alert("头像上传成功");
+                }else {
+                    alert("头像上传失败")
+                }
+            }
+        });
+    }
+</script>
+
